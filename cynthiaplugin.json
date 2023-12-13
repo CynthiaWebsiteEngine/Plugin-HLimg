@@ -1,0 +1,10 @@
+{
+  "CyntiaPluginCompat": "2",
+  "runners": {
+    "modifyBodyHTML": {
+      "type": "js",
+      "execute": "[\"index.js\", \"body\", \"{{{input}}}\"]"
+    },
+    "hostedfolders": [["./node_modules/hl-img/dist/", "hl-img"]]
+  }
+}
