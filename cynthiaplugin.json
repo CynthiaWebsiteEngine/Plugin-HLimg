@@ -3,7 +3,7 @@
   "runners": {
     "modifyBodyHTML": {
       "type": "js",
-      "execute": "[\"index.js\", \"body\", \"{{{input}}}\"]"
+      "execute": "[\"--print\", '(() => {const path = require(\"path\");const hlimg_config = require(path.join(__dirname, \"/config.json\")); return (`\n\n\n\n\n{{{input}}}<script id=\"hlimg-options\" type=\"application/json\">${JSON.stringify(hlimg_config)}</script><script defer type=\"module\" src=\"/e/hl-img/hl-img.min.js\"></script>`);})()']"
     },
     "hostedfolders": [["./node_modules/hl-img/dist/", "hl-img"]]
   }
